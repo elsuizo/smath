@@ -1,7 +1,7 @@
 //-------------------------------------------------------------------------
-// @file lib.rs
+// @file traits.rs
 //
-// @date 03/25/21 12:32:05
+// @date 03/25/21 12:34:44
 // @author Martin Noblia
 // @email mnoblia@disroot.org
 //
@@ -22,9 +22,7 @@
 //
 // You should have received a copy of the GNU General Public License
 //--------------------------------------------------------------------------
-
-pub mod smatrix;
-pub mod svector;
-pub mod traits;
-pub mod utils;
-
+/// Generic trait for Matrix operations and Linear algebra methods
+pub trait LinearAlgebra<T> {
+    fn det(&self) -> T;
+}
